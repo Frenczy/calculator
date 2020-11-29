@@ -1,0 +1,78 @@
+
+        body {
+            box-sizing: border-box;
+        }
+
+        div[class='container'] {
+            /* background-color: rgb(201, 201, 201); */
+            border: 2px solid rgb(222, 222, 222);
+            display: flex;
+            flex-direction: column;
+            height: 25rem;
+            width: 20rem;
+        }
+
+        div[class='display'] {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(201, 201, 201);
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+            padding-right: 1rem;
+            height: 5rem;
+            font-size: 2rem;
+            text-align: end;
+            line-height: 3.7rem;
+            overflow: hidden;
+        }
+        div[class='display']:hover{
+            /* border: 2px solid rgb(128, 128, 128) */
+            background-color: rgb(252,252,252);
+            }
+
+        div[class='numbers'] {
+            display: flex;
+            flex-direction: row;
+            font-size: 1.3rem;
+            text-align: center;
+            line-height: 2.7rem;
+            background-color: rgb(255, 255, 255);
+            height: 20rem;
+        }
+        div[class='numbers__left']{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 0.5rem 0 0 0;
+            width: 76%;
+        
+        }
+        div[class='numbers__right']{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0.5rem 0 0 0;
+            width: 24%;
+        }
+
+        div[class^='button']{
+            border: 2px solid rgb(201, 201, 201);
+            background-color: rgb(222, 222, 222);
+            width: 4rem;
+            height: 2.7rem;
+            transition: 0.2s;
+        }
+        div[class^='button']:hover{
+            border: 2px solid rgb(128, 128, 128);
+        }
+
+        div[class='button__equal']{
+            height: 14.5rem;            
+            background-color: lightblue;
+            line-height: 14.5rem;
+        }
+        
+        div[class='button__plus'], div[class='button__minus'], div[class='button__multiply'], div[class='button__divide']{
+            border: 2px solid rgb(201, 201, 201);
+            background-color: rgb(201, 201, 201 );
+        }
+
